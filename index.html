@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <div class="container">
+
     <div class="top-bar">Sign Up</div>
 
     <form class="form">
@@ -30,37 +31,23 @@
         <div class="row">
             <label>Date of Birth</label>
             <div class="dob">
-                <select required>
-                    <option value="">Month</option>
-                    <option>May</option>
-                </select>
-
-                <select required>
-                    <option value="">Day</option>
-                    <option>5</option>
-                </select>
-
-                <select required>
-                    <option value="">Year</option>
-                    <option>1985</option>
-                </select>
+                <select required><option>Month</option></select>
+                <select required><option>Day</option></select>
+                <select required><option>Year</option></select>
             </div>
         </div>
 
         <div class="row">
             <label>Gender</label>
             <div class="gender">
-                <label><input type="radio" name="gender" required> Male</label>
-                <label><input type="radio" name="gender"> Female</label>
+                <label class="radio"><input type="radio" name="gender" required> Male</label>
+                <label class="radio"><input type="radio" name="gender"> Female</label>
             </div>
         </div>
 
         <div class="row">
             <label>Country</label>
-            <select required>
-                <option value="">Select Country</option>
-                <option>USA</option>
-            </select>
+            <select required><option>Select Country</option></select>
         </div>
 
         <div class="row">
@@ -83,17 +70,18 @@
             <input type="password" required>
         </div>
 
-        <div class="row checkbox-row">
+        <div class="agree">
             <input type="checkbox" required>
             <span>I agree to the Terms of Use</span>
         </div>
 
-        <div class="buttons">
-            <button type="submit" class="submit">submit</button>
-            <button type="reset" class="cancel">Cancel</button>
-        </div>
-
     </form>
+
+    <div class="bottom-bar">
+        <button type="submit" class="submit">submit</button>
+        <button type="reset" class="cancel">Cancel</button>
+    </div>
+
 </div>
 
 </body>
